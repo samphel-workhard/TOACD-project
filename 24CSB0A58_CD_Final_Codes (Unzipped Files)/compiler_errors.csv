@@ -1098,3 +1098,68 @@ C:\Users\UGYENJ~1\AppData\Local\Temp\tmp7g_hosn5\temp_source.cpp:14:5: error: ex
      int value = ""100""; // Error 2: Cannot assign a string literal to an int variable
      ^~~
 ",N/A
+2026-09-30 00:54:30,"C:\Users\UGYENJ~1\AppData\Local\Temp\tmplvt54vhb\temp_source.cpp: In function 'int main()':
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmplvt54vhb\temp_source.cpp:5:15: error: invalid conversion from 'const char*' to 'int' [-fpermissive]
+     int age = ""twenty""; // This will cause a Type Mismatch
+               ^~~~~~~~
+",Unknown,"C:\Users\UGYENJ~1\AppData\Local\Temp\tmplvt54vhb\temp_source.cpp: In function 'int main()':
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmplvt54vhb\temp_source.cpp:5:15: error: invalid conversion from 'const char*' to 'int' [-fpermissive]
+     int age = ""twenty""; // This will cause a Type Mismatch
+               ^~~~~~~~
+",N/A
+2026-09-30 00:55:12,"C:\Users\UGYENJ~1\AppData\Local\Temp\tmp4q5jboyw\temp_source.cpp: In function 'int main()':
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmp4q5jboyw\temp_source.cpp:5:15: error: invalid conversion from 'const char*' to 'int' [-fpermissive]
+     int age = ""twenty""; // This will cause a Type Mismatch
+               ^~~~~~~~
+",Unknown,"C:\Users\UGYENJ~1\AppData\Local\Temp\tmp4q5jboyw\temp_source.cpp: In function 'int main()':
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmp4q5jboyw\temp_source.cpp:5:15: error: invalid conversion from 'const char*' to 'int' [-fpermissive]
+     int age = ""twenty""; // This will cause a Type Mismatch
+               ^~~~~~~~
+",N/A
+2026-09-30 00:57:18,"C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp:12:2: error: stray '`' in program
+ +```
+  ^
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp:12:3: error: stray '`' in program
+ +```
+   ^
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp:12:4: error: stray '`' in program
+ +```
+    ^
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp: In function 'int main()':
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp:7:6: error: expected primary-expression before 'int'
+ -    int age = ""twenty""; // This will cause a Type Mismatch
+      ^~~
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp:8:6: error: expected primary-expression before 'int'
+ +    int age = 20; // Correctly assigned an integer value
+      ^~~
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp:9:14: error: 'age' was not declared in this scope
+      cout << age << endl;
+              ^~~
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp: At global scope:
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp:12:1: error: expected unqualified-id before '+' token
+ +```
+ ^
+",Unknown,"C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp:12:2: error: stray '`' in program
+ +```
+  ^
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp:12:3: error: stray '`' in program
+ +```
+   ^
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp:12:4: error: stray '`' in program
+ +```
+    ^
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp: In function 'int main()':
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp:7:6: error: expected primary-expression before 'int'
+ -    int age = ""twenty""; // This will cause a Type Mismatch
+      ^~~
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp:8:6: error: expected primary-expression before 'int'
+ +    int age = 20; // Correctly assigned an integer value
+      ^~~
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp:9:14: error: 'age' was not declared in this scope
+      cout << age << endl;
+              ^~~
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp: At global scope:
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmpp3ygy3qw\temp_source.cpp:12:1: error: expected unqualified-id before '+' token
+ +```
+ ^
+",N/A

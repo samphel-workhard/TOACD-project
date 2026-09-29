@@ -318,5 +318,21 @@
         "user_prompt": "can you fux it",
         "llm_response": "Connection Failed. Is Ollama running? Error: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
         "fixed_code": "N/A"
+    },
+    {
+        "timestamp": "2026-09-30 00:56:02",
+        "error_category": "Type Mismatch",
+        "code_snippet": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int age = \"twenty\"; // This will cause a Type Mismatch\n    cout << age << endl;\n    return 0;\n}",
+        "user_prompt": "SYSTEM (Compile Failed)",
+        "llm_response": "**Detected:** Type Mismatch\n\n**What happened:** Type Mismatch Error\n\n**Why:** The code is trying to assign a string literal to an integer variable, which is not allowed in C++\n\n**Where:** Line 5, Col 15\n\n**Concept:** Variable Types (int vs string, pointers)\n\n**Practice:** What is the correct way to assign a numeric value to an integer variable in C++?\n\n### VERIFICATION RESULTS\n\n- [x] **GENERATED:** AI proposed a repair.\n- [x] **SECURITY CHECK PASSED:** The suggested fix is secure.\n- [ ] **COMPILES:** The proposed code failed to compile.\n- [ ] **VERIFIED:** The repair failed verification.\n",
+        "fixed_code": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    int age = 20; // Correctly assigned an integer value\n    cout << age << endl;\n    return 0;\n}\n```"
+    },
+    {
+        "timestamp": "2026-09-30 00:58:28",
+        "error_category": "Logic Check",
+        "code_snippet": "\n #include <iostream>\n#include <string>\n using namespace std;\n \n int main() {\nint age = 20; // Correctly assigned an integer value\ncout << age << endl;\n return 0;\n }\n",
+        "user_prompt": "SYSTEM (Success)",
+        "llm_response": "**Code compiled successfully!** The output is shown on the left.\n\n**AI Logic Check:**\nCongratulations, this C++ code is actually perfect! There are no logical flaws in this code. Here's a breakdown:\n\n1. The code includes the necessary header files (`<iostream>` and `<string>`) and uses the `using namespace std;` directive to avoid explicit namespace qualification.\n2. The `main()` function is defined correctly, with a return type of `int` and a return statement that returns 0, indicating successful program execution.\n3. The variable `age` is declared and initialized with an integer value of 20, which is a valid and meaningful assignment.\n4. The `cout` statement is used to print the value of `age` to the console, which is a correct and safe operation.\n5. The program returns 0 at the end, indicating successful execution.\n\nThere are no logical flaws, such as infinite loops, uninitialized variables, or unreachable code. The code is simple, yet correct and well-structured.",
+        "fixed_code": "N/A"
     }
 ]
