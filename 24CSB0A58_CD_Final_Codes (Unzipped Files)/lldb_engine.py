@@ -4,8 +4,9 @@ import json
 import os
 
 # LLM config (Must match your app.py)
-OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL_NAME = "llama3"
+OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
+OLLAMA_GENERATE_URL = f"{OLLAMA_HOST.rstrip('/')}/api/generate"
+MODEL_NAME = os.getenv("OLLAMA_MODEL", "llama3")
 
 def execute_lldb_command(executable_path, command):
     """
@@ -70,7 +71,10 @@ You MUST respond in strict JSON format:
         print(f"[SYSTEM] Turn {turn + 1}: Asking Llama 3 for its next move...")
         
         payload = {"model": MODEL_NAME, "prompt": current_context, "stream": False, "format": "json"}
-        response = requests.post(OLLAMA_URL, json=payload).json()['response']
+        try:
+            response = requests.post(OLLAMA_GENERATE_URL, json=payload, timeout=60).json()['response']
+        except requests.exceptions.RequestException as e:
+            return f"❌ Agent aborted due to connection error: {str(e)}", ui_debug_log
         
         try:
             ai_decision = json.loads(response)

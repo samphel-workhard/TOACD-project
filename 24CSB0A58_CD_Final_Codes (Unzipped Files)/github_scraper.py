@@ -7,12 +7,16 @@ RISK_KEYWORDS = [
     "strcpy", "sprintf", "gets", "system", "exec", "popen"
 ]
 
+import os
+
 # Note: Unauthenticated requests are limited to 10 per minute. 
 # If you have a GitHub Personal Access Token (PAT), add it here for 30 req/min!
 HEADERS = {
-    "Accept": "application/vnd.github.v3+json",
-    "Authorization": "Bearer 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"
+    "Accept": "application/vnd.github.v3+json"
 }
+github_token = os.environ.get("GITHUB_TOKEN")
+if github_token:
+    HEADERS["Authorization"] = f"Bearer {github_token}"
 
 def get_keyword_frequency(keyword):
     """Hits the GitHub Search API and returns the total count of files containing the keyword."""

@@ -1064,3 +1064,37 @@ clang++: error: linker command failed with exit code 1 (use -v to see invocation
       |         ^     ~~~~~~~~
 1 error generated.
 ",N/A
+2026-09-28 22:12:04,"C:\Users\UGYENJ~1\AppData\Local\Temp\tmprfkj_1sn\temp_source.cpp: In function 'int calculateArea(int, int)':
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmprfkj_1sn\temp_source.cpp:5:5: error: expected ',' or ';' before 'return'
+     return area;
+     ^~~~~~
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmprfkj_1sn\temp_source.cpp: In function 'int main()':
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmprfkj_1sn\temp_source.cpp:14:5: error: expected ';' before 'int'
+     int value = ""100""; // Error 2: Cannot assign a string literal to an int variable
+     ^~~
+",Unknown,"C:\Users\UGYENJ~1\AppData\Local\Temp\tmprfkj_1sn\temp_source.cpp: In function 'int calculateArea(int, int)':
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmprfkj_1sn\temp_source.cpp:5:5: error: expected ',' or ';' before 'return'
+     return area;
+     ^~~~~~
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmprfkj_1sn\temp_source.cpp: In function 'int main()':
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmprfkj_1sn\temp_source.cpp:14:5: error: expected ';' before 'int'
+     int value = ""100""; // Error 2: Cannot assign a string literal to an int variable
+     ^~~
+",N/A
+2026-09-28 22:13:10,"C:\Users\UGYENJ~1\AppData\Local\Temp\tmp7g_hosn5\temp_source.cpp: In function 'int calculateArea(int, int)':
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmp7g_hosn5\temp_source.cpp:5:5: error: expected ',' or ';' before 'return'
+     return area;
+     ^~~~~~
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmp7g_hosn5\temp_source.cpp: In function 'int main()':
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmp7g_hosn5\temp_source.cpp:14:5: error: expected ';' before 'int'
+     int value = ""100""; // Error 2: Cannot assign a string literal to an int variable
+     ^~~
+",Unknown,"C:\Users\UGYENJ~1\AppData\Local\Temp\tmp7g_hosn5\temp_source.cpp: In function 'int calculateArea(int, int)':
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmp7g_hosn5\temp_source.cpp:5:5: error: expected ',' or ';' before 'return'
+     return area;
+     ^~~~~~
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmp7g_hosn5\temp_source.cpp: In function 'int main()':
+C:\Users\UGYENJ~1\AppData\Local\Temp\tmp7g_hosn5\temp_source.cpp:14:5: error: expected ';' before 'int'
+     int value = ""100""; // Error 2: Cannot assign a string literal to an int variable
+     ^~~
+",N/A

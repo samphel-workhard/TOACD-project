@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+temp_program
+temp_program.exe
+temp_program.bin
+debug_target.bin
+debug_target.cpp
+temp_source.cpp
+*.csv
+.env
+system_interactions.json
+powermetrics_log.txt
